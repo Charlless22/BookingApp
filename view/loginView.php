@@ -1,32 +1,41 @@
 <!DOCTYPE html>
 <html>
-    <header>
+    <head>
         <title>BookIt</title>
         <link rel="stylesheet" href="../css/login.css">
         <link rel="icon" type="image/png" href="../assets/logo.png">
-    </header>
+    </head>
     <body>
         <div class="container">
-            <div class="top-login">
-            </div>
-            <div class="middle-login">
-                <div class="container-login">
-                    <div class="logo-div-login">
-                        <img alt="logo" src="../assets/logo.png" style="width: 200px; height: 200px">
-                    </div>
-                    <form class="form-container" action="dashboardView.php">
-                        <div class="id-container">
-                                <label for="email">Email</label>
-                                <input id="email" type="email" required>
-
-                                <label for="password">Password</label>
-                                <input id="password" type="password" required>
+            <div class="top-page"></div>
+            <div class="middle-page">
+                <div class="id-container">
+                    <form class="form-container">
+                        <div class="logo-container">
+                            <img src="../assets/logo.png" width="100px" height="100px">
+                        </div>
+                        <div class="credentials-container">
+                            <div class="input-container">
+                                <label>Email</label>
+                                <input type="email" placeholder="email@email" required/>
+                            </div>
+                            <div class="input-container">
+                                <label>Password</label>
+                                <input type="password" placeholder="password" required/>
+                            </div>
+                        </div>
+                        <hr style="width:90%; border-top: 1px solid; border-color: #000000;">
+                        <div class="links-container">
+                            <a href="signUpView.php" style="color: #000">Sign up</a>
+                            <a href="forgetPasswordView.php" style="color: #000">Forget Password</a>
+                        </div>
+                        <div class="button-container">
+                            <button class="button">Login</button>
                         </div>
                     </form>
                 </div>
             </div>
-            <div class="bottom-login">
-            </div>
+            <div class="bottom-page"></div>
         </div>
     </body>
     <footer>
