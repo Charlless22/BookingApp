@@ -130,18 +130,3 @@ input:focus {
     flex: 0.5;
     background-color: #E5E1EE;
 }
-
-.notice {
-    position: fixed;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #ffdddd; /* Rouge clair par défaut pour erreur */
-    color: #900; /* Rouge foncé */
-    padding: 10px 20px;
-    border: 1px solid #f5c2c7;
-    border-radius: 5px;
-    z-index: 1000;
-    font-family: Arial, sans-serif;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
