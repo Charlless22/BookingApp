@@ -62,6 +62,7 @@ $conn->close();
 <html>
     <head>
         <title>BookIt</title>
+        <link rel="stylesheet" href="../css/template.css">
         <link rel="stylesheet" href="../css/login.css">
         <link rel="icon" type="image/png" href="../assets/logo.png">
     </head>
