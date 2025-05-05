@@ -29,7 +29,9 @@ $tables = [
         name VARCHAR(255) NOT NULL,
         bio TEXT,
         images JSON,
-        guide_review TEXT,
+        notes INT,
+        tickets INT,
+        price DECIMAL(10,2),
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     )",
     "CREATE TABLE IF NOT EXISTS users (
