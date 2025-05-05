@@ -1,0 +1,207 @@
+.top-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex: 0.5;
+}
+
+.middle-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.event-container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #C4D7F2;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+}
+
+.top-container {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1em;
+    gap: 1em;
+}
+
+.top-container-picture {
+    display: flex;
+    flex: 0.5;
+}
+
+.event-picture {
+    border: none;
+    border-radius: 15px;
+}
+
+.top-container-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    border: none;
+    border-radius: 15px;
+    background-color: #F2D7C4;
+    padding-top: 3em;
+}
+
+.create-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+}
+
+.create-button:hover {
+    background-color: #45a049;
+}
+
+.top-container-title {
+    padding-left: 10px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.fields {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #333;
+    padding: 12px 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.fields:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Style au focus */
+.fields:focus {
+    outline: none;
+    border-color: rgba(245, 119, 119, 0.6);
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 6px 12px rgba(0, 0, 100, 0.15);
+}
+
+.top-container-descr {
+    padding-left: 10px;
+}
+
+.bottom-container {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    gap: 1em;
+}
+
+.bottom-container-notes {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    border: none;
+    border-radius: 15px;
+    background-color: #F2D7C4;
+}
+
+.bottom-container-tickets {
+    display: flex;
+    flex: 0.5;
+    border: none;
+    border-radius: 15px;
+    background-color: #F2D7C4;
+}
+
+.bottom-container-notation {
+    padding-left: 10px;
+}
+
+.bottom-container-evaluation {
+    padding-left: 10px;
+}
+
+.bottom-container-prices {
+    padding-left: 10px;
+}
+
+.gauge {
+    /* Réinitialiser le style par défaut du progress */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    /* Dimensions */
+    width: 90%;
+    height: 20px;
+
+    /* Effet de verre/vitre */
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Personnalisation de la barre de progression (pour Chrome/Safari/Opera) */
+.gauge::-webkit-progress-bar {
+    background-color: transparent;
+    border-radius: 12px;
+}
+
+.gauge::-webkit-progress-value {
+    background: rgba(100, 180, 255, 0.6);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(100, 180, 255, 0.8);
+    transition: width 0.5s ease;
+}
+
+/* Pour Firefox */
+.gauge::-moz-progress-bar {
+    background: rgba(100, 180, 255, 0.6);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(100, 180, 255, 0.8);
+    transition: width 0.5s ease;
+}
+
+/* Effet de survol */
+.gauge:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.bottom-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex: 0.5;
+}

@@ -1,10 +1,93 @@
 @font-face {
-    font-family: 'MyFont';
+    font-family: 'Kanit';
     src: url('../assets/fonts/Kanit-Regular.ttf') format('truetype');
 }
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'MyFont', sans-serif;
+    font-family: 'Kanit', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E1EE;
+}
+
+/* NAVBAR */
+
+.navbar {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #C4D7F2;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    height: 100%;
+    display: flex;
+    flex: 0.3;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar-research {
+    height: 100% !important;
+    display: flex !important;
+    flex: 1 !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+}
+
+.research {
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #FFE2E2;
+    transition: .3s;
+}
+
+.research:focus {
+    outline-color: rgba(245, 119, 119, 0.6);
+    box-shadow: 0 6px 12px rgba(0, 0, 100, 0.15);
+}
+
+.research:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.button-container {
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    flex: 2;
+    align-items: center;
+}
+
+.nav-button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 2em;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #F2D7C4;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #252222;
+}
+
+.nav-button:hover {
+    background-color: #B2F7FF;
 }
