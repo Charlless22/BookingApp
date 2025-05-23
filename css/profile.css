@@ -1,0 +1,114 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex: 0.5;
+}
+
+.middle-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.middle-container {
+    width: 90%;
+    height: 100%;
+    background-color: #F2D7C4;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.profile-name {
+    width: 100%;
+    display: flex;
+    flex: 0.5;
+    padding-left: 1em;
+    border-radius: 15px;
+}
+
+.event-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    overflow: hidden;
+    max-height: 100%;
+    width: 100%;
+}
+
+.event-card {
+    margin-top: 1em;
+    margin-left: 1em;
+    background-color: rgba(196, 215, 242);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-image {
+    width: 100%;
+    height: 150px;
+}
+
+.event-details {
+    padding: 12px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.event-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.event-description {
+    font-size: 0.85em;
+    color: #444;
+    margin-bottom: 12px;
+    flex: 1;
+}
+
+.event-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8em;
+    color: #666;
+}
+
+.event-date {
+    color: #1565c0;
+}
+
+.event-price {
+    color: #444;
+}
+
+.bottom-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex: 0.5;
+}
