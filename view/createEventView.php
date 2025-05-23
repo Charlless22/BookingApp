@@ -2,15 +2,19 @@
 // Start session
 session_start();
 
+// Vérifie que l'utilisateur est connecté
+if (!isset($_SESSION['user_id'])) {
+    header("Location: loginView.php");
+    exit;
+}
+
 // Database connection
-$host = "localhost"; // Change according to your database host
-$username = "root"; // Change according to your database username
-$password = ""; // Change according to your database password
-$database = "bookit"; // Change according to your database name
+$host = "localhost";
+$username = "root";
+$password = "";
+$database = "bookit";
 
 $conn = new mysqli($host, $username, $password, $database);
-
-// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
@@ -22,6 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $tickets = intval($_POST['tickets']);
     $price = floatval($_POST['price']);
     $notes = 0;
+    $user_id = intval($_SESSION['user_id']); // ✅ récupère le user ID
 
     $images = [];
 
@@ -32,12 +37,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if (in_array($fileExt, $allowed)) {
             $uploadDir = '../uploads/';
-
             if (!file_exists($uploadDir)) {
                 mkdir($uploadDir, 0777, true);
             }
-
-            // Generate unique filename
             $newFilename = uniqid() . '.' . $fileExt;
             $destination = $uploadDir . $newFilename;
 
@@ -47,13 +49,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
-    // Convert images array to JSON
     $imagesJson = json_encode($images);
 
-    // Insert data into the database
-    $sql = "INSERT INTO events (name, bio, images, notes, tickets, price) VALUES (?, ?, ?, ?, ?, ?)";
+    // ✅ Insertion avec user_id
+    $sql = "INSERT INTO events (name, bio, images, notes, tickets, price, user_id) VALUES (?, ?, ?, ?, ?, ?, ?)";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("sssidi", $title, $description, $imagesJson, $notes, $tickets, $price);
+    $stmt->bind_param("sssiddi", $title, $description, $imagesJson, $notes, $tickets, $price, $user_id);
 
     if ($stmt->execute()) {
         $_SESSION['success_message'] = "Event created successfully!";
