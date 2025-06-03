@@ -24,6 +24,11 @@ Backend : PHP
 
 Base de données : MySQL
 
+## Screenshoots
+![dashboard](image.png)
+![create event](image-1.png)
+![profile page](image-2.png)
+
 ## Installation
 
 Cloner le projet :
@@ -33,9 +38,3 @@ git clone https://github.com/Charlless22/BookingApp.git
 
 cd booking-app
 ```
-
-Contribution
-
-Les contributions sont les bienvenues ! Merci de soumettre une pull request avec vos améliorations.
-
-[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
