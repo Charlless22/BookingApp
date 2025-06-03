@@ -25,9 +25,12 @@ Backend : PHP
 Base de données : MySQL
 
 ## Screenshoots
-![dashboard](image.png)
-![create event](image-1.png)
-![profile page](image-2.png)
+![image](https://github.com/user-attachments/assets/4d30071e-9661-42ea-82e9-72f31a97a1cc)
+
+![image](https://github.com/user-attachments/assets/18963a54-c5bf-4b01-9163-ca6f4cdf35df)
+
+![image](https://github.com/user-attachments/assets/d85a1eb3-80a5-48e6-9545-cddd8fad1eb5)
+
 
 ## Installation
 
